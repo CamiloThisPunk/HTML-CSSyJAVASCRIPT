@@ -1,0 +1,42 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background: brown;
+	box-sizing: border-box;
+	
+}
+.container{
+	background: black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	justify-content: center;
+
+	align-content: center;
+	
+	gap: 20px;
+	height: 100vh;
+}
+	
+
+
+
+.uno{
+	width: 400px;
+	height: 400px;
+	background: limegreen;
+	border-radius: 15px;
+}
+.dos{
+	width: 400px;
+	height: 400px;
+	background: purple;
+	border-radius: 15px;
+}
+.tres{
+	width: 400px;
+	height: 400px;
+	background: hotpink;
+	border-radius: 15px;
+}

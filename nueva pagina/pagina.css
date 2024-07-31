@@ -1,0 +1,27 @@
+.Cubo{
+    background: fuchsia;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+}
+.hijo{
+    background: darkblue;
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    
+}
+
+/* formateo del cuerpo de html */
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+/* span para resaltar algun parrafo o etc */
+body p span{
+    color: rgb(20, 220, 53);
+
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!--documento tipo html -->
+<html> <!-- html siempre para iniciar nuestra pagina web-->
+
+	<head> <!-- ESTE ES LA PARTE QUE NO SE VERA POR EL USUARION-->
+		<title>primera pagina web</title> <!-- ESTE ES EL TITULO DE LA PAGINA-->
+		<meta charset = "utf-8"> <!-- meta y charset sirve para evitar las malas escrituras como la (ñ)-->
+		<link rel ="icon" href="foto.ico"/>
+
+		<style>   
+			table, th,  td {
+				border : 1px solid black; 
+			}
+		</style> <!--  este no se ve en pantalla, aplicamos un estilo a la tabla y el tamaño de la tabla (desde aca podemos modificar la tabla a gusto)-->
+	</head>
+
+	<body> <!--ESTE ES LA PARTE QUE SE VERA POR EL USUARIO-->
+		<table style = "width: 500px;"> <!-- este argumento puede entrar ( style ="border: 1px solid black;") al costado de table -->
+			<thead> <!-- no cambia nada solo para que sea mas ordenado-->
+				<tr>
+					<th>producto</th> <!-- el th crea la cabecera de las columnas-->
+					<th>precio</th>  
+				</tr>
+			</thead>
+
+			<tbody> <!-- no cambia nada solo para separar y sea mas legible el codigo-->
+				<tr>
+					<td>hola beats</td>   <!-- el td crea las filas en el orden como se ve para al final crear una columna-->
+					<td>gratis</td>
+				</tr>
+
+				<tr> 
+					<td> ceviche</td>
+					<td> 15 soles</td> <!--otras filas. que se crearan para al final llegar a ser una columna-->
+				</tr>
+
+				<tr>
+					<td> puca picante</td>
+					<td>30 soles</td>
+				</tr>
+		 	</tbody>
+			<tfoot>
+				<td> total</td>
+				<td> 45 soles</td>
+
+			
+
+		</table> <!--la etiqueta table sirve para crear tablas -->
+
+		<!-- LISTAS -->
+		<ul>   <!--  ul es una LISTA NO ORDENADA-->
+			<li> elemento uno </li>
+			<li> lista dos </li>  <!-- EL <li> hace referencia para la creacion de las listas -->
+			<li> lista tres </li>
+			<li> lista cuatro </li>
+			<li> lista cinco </li>
+		</ul>
+
+		<ol> 
+			<li value = "10"> lista 1</li> <!--ol es una LISTA ORDENADA -->
+			<li> lista2</li>
+			<li> lista 3 </li>
+			<li> lista 4</li>
+			<li> lista 5 </li>
+
+			<li>
+				 <ol>
+				 	<li style = "list-style-type: lower-alpha;"> lista anidada uno</li>
+				 	<li style = "list-style-type: lower-alpha;">lista anidada dos</li>
+				 	<li style = "list-style-type: lower-alpha;
+  						">lista anidada tres</li>
+				 	<li style = "list-style-type: lower-alpha;">lista anidada cuatro</li>
+				 	<li style = "list-style-type: lower-alpha;">lista anidada cinco</li>
+
+
+				 </ol>
+			</li>
+		</ol>
+
+		<form action = "/formulario" method = "POST"> <!-- TAMBIEN EXISTE EL METODO GET para el guardado (ninguno de los dos method no son seguros para el hackeo) -->
+			<label for = "nombre">NOMBRE</label>
+			<input value = "camilo harol" type = "text" id = "nombre" name = "nombre" placeholder = "introduzca su nombre" required = ""/> <!-- EL VALUE SIRVE PARA DEFINIR EL VALOR QUE IRA EN EL CUADRO DE NOMBRE ES COMO UN NOMBRE POR DEFECTO QUE IRA EN LA TABLA DE NOMBRE-->
+
+			<br><br> <!-- HACEMOS EL DOBLE SALTO DE LINEA-->
+
+			<label for = "apellido"> APELLIDO</label>
+			<input value = "conde yucra" type = "text" id = "apellido" name = "apellido" placeholder = "introduzca su apellido"/>
+
+			<br>
+
+			<label for = "comentario"> COMENTARIO</label>
+			<textarea cols = "50" rows = "10" id = "comentario" placeholder = "comentario" name = "comentario" > valor por defecto </textarea> <!-- CREA UN CUADRO PARA EL COMENTARIO -->
+
+			<br><br>
+
+			<input type = "submit" /> <!-- CON ESTO HACEMOS EL BOTON PARA GUARDAR TODO LOS DATOS INGRESADOS-->
+
+			<br>
+
+			<button type = "button" >tipo boton </button>
+			<button type ="reset" > tipo reset </button>   <!-- ESTOS SON LOS TIPOS BOTONES  PERSONALIZABLES QUE EL TIPO SUBMIT DE <INPUT>-->
+			<button type = "submit"> tipo submit </button>
+ 				
+		</form>
+		<br>
+		HOLA MUNDO
+		<center>
+			<h1>HOLA MUNDO</h1> <!--ESTOS SON LOS HEADING-->
+			<h2> HOLA MUNDO DOS </h2>  <!-- LOS H MAYORMENTE SERAN LOS QUE CONECTARAN CON EL NAVEGADOR-->
+			<h3>HOLA MUNDO TRES </h3>
+			<h4>HOLA MUNDO CUATRO </h4>
+		</center>
+		<h5>HOLA MUNOD CINCO</h5>
+		<hr> <!-- ESTE SEPARA LOS CODIGOS-->
+		<h6>HOLA MUNDO SEIS</h6>
+		<p> hola gringo como os a ido todo este tiempo pensaba que ya estabais muertos</p>
+		<P> ESTE ES UN MALDITO MALDITAMENTE PARRAFO SERA MAS EXTENSO QUE LA ANTERIOR QUE VEMOS
+			PARA VER LA SIGUIENTE ETIQUETA 
+		<br> <!--ESTE SIRVE PARA HACER UN SALTO DE LINEA-->
+		<b>negrita</b>
+		<i>italica</i>          <!-- ESTOS CUATROS SON ETIQUETAS DE TEXTO TODAS SE IMPRIMEN EN UNA SOLA LINEA O COMO PARRFO-->
+		<strike> tachada </strike>
+		<small> pequeña </small>
+
+   		<!-- ESTO ES UN MALDITO COMENTARIO PARA SEÑALAR LO QUE HACE UNA LINEA DE CODIGO-->
+
+   		<span style = "color: red"> CAMILO HAROL CONDE YUCRA</span> <!--ESTE SIRVE PARA RESALTAR UN CODIGO (COLOR, ESTILO)-->
+   		<br>
+   		<a href = "https://www.google.com">Ir al maldito google dentro de mi pagina</a> <!-- IR A GOOGLE DENTRO DE MI PAGINA MISMA-->
+   		<br>
+   		<a target = "_blank" href = "https://www.google.com"> Ir al maldito google fuera de mi pagina </a>
+   		<br>
+   		<img src = "img/aiz.jpg" width = "600" alt="aiz bonita" title="joven guerrera"/>
+
+
+	</body>
+</html> <!--ESTO ES EL CIERRE DE LA ETIQUETA ES LA MISMA QUE LA INICIAL SOLO QUE SE AGREGA EL SIGNO DE DIVISION PARA PODER CERRARLA-->
